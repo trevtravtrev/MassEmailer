@@ -29,6 +29,7 @@ def parse_email_addresses(file, num_of_addresses):
     with open(file, 'r') as f:
         all_addresses = f.read().splitlines()       # read all email addresses into all address list
 
+    n_addresses = all_addresses[:num_of_addresses]
     del all_addresses[:num_of_addresses]        # delete first "n" addresses from all address list
 
     remaining_addresses = "\n".join(all_addresses)        # join all address list into a newline separated string "remaining_addresses" for writing
@@ -36,7 +37,7 @@ def parse_email_addresses(file, num_of_addresses):
     with open(file, 'w') as d:
         d.write(remaining_addresses)      # write remaining_addresses back to file.
 
-    return all_addresses[:num_of_addresses]
+    return n_addresses
 
 
 def create_message(subject, sender, receiver, body):
