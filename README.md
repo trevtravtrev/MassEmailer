@@ -12,7 +12,7 @@ How To Use:
    - Your email address  
    - Your email address password  
    - Your email provider's server  
-   - Number of email addresses from your addresses text file you want to send to  
+   - Number of email addresses from your addresses text file you want to send to each run  
    - Your email address text file name  
    - Your email body text  
    - Your email subject  
