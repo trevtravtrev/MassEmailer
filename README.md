@@ -30,7 +30,7 @@ Example Code:
 email_address_list = parse_email_addresses('addresses.txt', 100)
     
 for email_address in email_address_list:
-    email_message = create_message('Hello, this is the email subject', 'hi@hello.com', email_address, body_text)
+    email_message = create_message('Hello, this is the email subject', 'hi@hello.com', email_address, body_text, attachments=['file_path1','file_path2', ...])
     send_email('hi@hello.com', 'password123', email_message)
     sleep(1)
 ```
