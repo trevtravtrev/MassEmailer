@@ -27,11 +27,11 @@ Example Use:
 
 Example Code:  
 ```body_text = parse_email_body('email.txt')
-email_address_list = parse_email_addresses('addresses.txt', 99)
+email_address_list = parse_email_addresses('addresses.txt', 100)
     
 for email_address in email_address_list:
-    email_message = create_message('your email subject', 'your email address', email_address, body_text)
-    send_email('your email address', 'your email password', email_message)
+    email_message = create_message('Hello, this is the email subject', 'hi@hello.com', email_address, body_text)
+    send_email('hi@hello.com', 'password123', email_message)
     sleep(1)
 ```
    
