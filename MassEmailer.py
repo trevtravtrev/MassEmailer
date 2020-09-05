@@ -29,7 +29,6 @@ def parse_email_addresses(file, num_of_addresses):
     :param num_of_addresses: number of email addresses you want to send to (int)
     :return: returns only the first num_of_addresses from original email address file
     """
-    copyfile(file, file + '.bak')
 
     with open(file, 'r') as f:
         all_addresses = f.read().splitlines()       # read all email addresses into all address list
