@@ -96,6 +96,6 @@ if __name__ == "__main__":
     email_address_list = parse_email_addresses('addresses.txt', 99)
 
     for email_address in email_address_list:
-        email_message = create_message('Considering applying for admission', 'your email address', email_address, body_text)
+        email_message = create_message('your email subject', 'your email address', email_address, body_text)
         send_email('your email address', 'your email password', email_message)
         sleep(1)
