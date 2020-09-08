@@ -36,4 +36,5 @@ for email_address in email_address_list:
 ```
    
 Important Notes:  
-- This program has you input how many of the email addresses from your email address .txt file you want to send to each run, this is due to email send limits like gmail's limiting to only sending 100 emails per day. Once the program sends to those email addresses, it deletes the used addresses from your .txt file only leaving the un-used addresses. Keep a copy of your original email list safe elsewhere or you will lose ALL of them once the program has sent an email to them.
+- This program has you input how many of the email addresses from your email address .txt file you want to send to each run, this is due to email send limits like gmail's limiting to only sending 100 emails per day. Once the program sends to those email addresses, it deletes the used addresses from your .txt file only leaving the un-used addresses. Keep a copy of your original email list safe elsewhere or you will lose ALL of them once the program has sent an email to them.  
+- For this to work with gmail, you must turn "less secure app access" ON in your gmail settings. Here is a guide: https://support.google.com/accounts/answer/6010255  
